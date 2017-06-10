@@ -24,3 +24,13 @@ function reverseBlur(id)
 
 
 }
+function loadMore(id)
+{
+	var btns = document.getElementsByClassName("loadMoreButton");
+	btns[id].style.opacity="0.8";
+}
+function hideButton(id)
+{
+	var btns = document.getElementsByClassName("loadMoreButton");
+	btns[id].style.opacity='0';
+}

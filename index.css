@@ -6,6 +6,7 @@ body
 	background-repeat: none;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;	
+	background-attachment: fixed;
 }
 #intro
 {
@@ -18,6 +19,7 @@ body
 }
 .eventImages img
 {
+	box-shadow: 0 0 20px #000;
 	width: 100%;
 }
 .container-fluid::before{
@@ -31,11 +33,23 @@ body
 	box-shadow: 0 0 20px #000;
 	display: inline-block;
 }
-#loadMoreButton
+.loadMoreButton
 {
-	position: relative;
-	float: right;
+	position: absolute;
+	right: 0px;
+	height: 100%;
+	top:0px;
 	z-index: 2;
 	background-color: white;
+	opacity: 0.8;
 	display: inline-block;
+	width: 2.5%;
+	padding-top:90px;
+	padding-left: 0.8%;
+}
+.headings
+{
+	font-size: 20px;
+	margin-left: 10px;
+	color:white;
 }
