@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="index.js"></script>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<a href="#" class="navbar-brand">Dance On</a>
+		</div>
+		<ul class="nav navbar-nav">
+		<li><a href="#" class="active">Home</a></li><li>
+		<a href="alpha">Alpha</a></li><li>
+		<a href="beta">Beta</a></li><li>
+		<a href="gamma">Gamma</a></li><li>
+		<a href="delta">Delta</a></li>
+		</ul>
+		<nav class="nav navbar-right">
+		<div  class="dropdown">
+			<button  id="dropdown" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span></button>
+			<ul class="dropdown-menu" >
+				<li><a href="#">Alpha</a></li>
+				<li><a href="#">Beta</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</div>
+		</nav>
+	</div>
+
+
+</nav>	
+<br>
+	<br>
+	
+<div class="container-fluid" id="intro">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<video id="introVideo" onmouseover="showVideoControls()" onmouseout="hideVideoControls()">
+				<source src="movie.mp4" type="video/mp4">
+				Alternate text.
+			</video>
+
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="row" id="eventsDivision">
+		<div class="col-md-3 eventImages" onmouseover="blurAndShowOptions(0)" onmouseout="reverseBlur(0)">
+			<img src="3.jpg"/>
+		</div>
+		<div class="col-md-3 eventImages" onmouseover="blurAndShowOptions(1)" onmouseout="reverseBlur(1)">
+			<img src="3.jpg" >
+		</div>
+		<div class="col-md-3 eventImages" onmouseover="blurAndShowOptions(2)" onmouseout="reverseBlur(2)">
+			<img src="3.jpg" />
+		</div>
+		<div class="col-md-3 eventImages" onmouseover="blurAndShowOptions(3)" onmouseout="reverseBlur(3)"><img src="3.jpg" /></div>
+	
+	
+		<span id="loadMoreButton" class="glyphicon glyphicon-chevron-right"></span>
+	</div>
+
+
+</div>
+</body>
+
+</html>

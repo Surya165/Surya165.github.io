@@ -1,0 +1,41 @@
+body
+{
+	background-image: url("background.jpg");
+	background-color: white;
+	background-size: 100%;
+	background-repeat: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;	
+}
+#intro
+{
+	
+}
+#introVideo
+{
+	width: 100%;
+	box-shadow: 0 0 20px #000;
+}
+.eventImages img
+{
+	width: 100%;
+}
+.container-fluid::before{
+	width:0px !important;
+}
+#eventsDivision
+{
+	background-color: #999999;
+	padding: 20px;
+	margin:0px 10px 10px 10px;
+	box-shadow: 0 0 20px #000;
+	display: inline-block;
+}
+#loadMoreButton
+{
+	position: relative;
+	float: right;
+	z-index: 2;
+	background-color: white;
+	display: inline-block;
+}
